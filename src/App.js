@@ -18,6 +18,7 @@ function FuturisticLoader() {
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
@@ -28,20 +29,58 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Close nav on route/hash change or resize
+  useEffect(() => {
+    const closeNav = () => setNavOpen(false);
+    window.addEventListener('hashchange', closeNav);
+    window.addEventListener('resize', closeNav);
+    return () => {
+      window.removeEventListener('hashchange', closeNav);
+      window.removeEventListener('resize', closeNav);
+    };
+  }, []);
+
   if (loading) return <FuturisticLoader />;
 
   return (
     <div className="bg-gray-950 text-white min-h-screen font-sans">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-gray-950 bg-opacity-90 shadow-lg backdrop-blur-md border-b border-white/20" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', borderBottom: '1px solid rgba(255,255,255,0.12)'}} data-aos="fade-down">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex justify-center items-center">
-          <div className="flex-1 flex justify-center space-x-12">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex justify-center items-center relative">
+          {/* Hamburger for mobile */}
+          <button
+            className="md:hidden absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+            aria-label="Open navigation menu"
+            onClick={() => setNavOpen(v => !v)}
+          >
+            {navOpen ? (
+              // Close (X) icon
+              <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z"/></svg>
+            ) : (
+              // Hamburger icon
+              <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+            )}
+          </button>
+          {/* Desktop nav */}
+          <div className="flex-1 flex justify-center space-x-12 hidden md:flex">
             <a href="#home" className="navbar-link inline-block hover:text-green-400 transition">Home</a>
             <a href="#about" className="navbar-link inline-block hover:text-green-400 transition">About</a>
             <a href="#skills" className="navbar-link inline-block hover:text-green-400 transition">Skills</a>
             <a href="#projects" className="navbar-link inline-block hover:text-green-400 transition">Projects</a>
             <a href="#footer" className="navbar-link inline-block hover:text-green-400 transition">Contact</a>
           </div>
+          {/* Mobile nav dropdown */}
+          {navOpen && (
+            <div className="md:hidden absolute top-full left-0 w-full bg-gray-950 bg-opacity-95 shadow-lg border-b border-white/10 animate-fade-in-down z-50">
+              <div className="flex flex-col items-center py-4 gap-4">
+                <a href="#home" className="navbar-link block w-full text-center py-2 hover:text-green-400 transition" onClick={() => setNavOpen(false)}>Home</a>
+                <a href="#about" className="navbar-link block w-full text-center py-2 hover:text-green-400 transition" onClick={() => setNavOpen(false)}>About</a>
+                <a href="#skills" className="navbar-link block w-full text-center py-2 hover:text-green-400 transition" onClick={() => setNavOpen(false)}>Skills</a>
+                <a href="#projects" className="navbar-link block w-full text-center py-2 hover:text-green-400 transition" onClick={() => setNavOpen(false)}>Projects</a>
+                <a href="#footer" className="navbar-link block w-full text-center py-2 hover:text-green-400 transition" onClick={() => setNavOpen(false)}>Contact</a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
