@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
 
 function FuturisticLoader() {
   return (
@@ -16,24 +14,6 @@ function FuturisticLoader() {
       </div>
     </div>
   );
-}
-
-function TypingText({ text, className }) {
-  const [displayed, setDisplayed] = useState('');
-  useEffect(() => {
-    setDisplayed('');
-    let i = 0;
-    const interval = setInterval(() => {
-      if (i < text.length) {
-        setDisplayed((prev) => prev + text[i]);
-        i++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 70);
-    return () => clearInterval(interval);
-  }, [text]);
-  return <h1 className={className}>{displayed}<span className="border-r-2 border-green-400 animate-pulse ml-1" /></h1>;
 }
 
 function App() {
