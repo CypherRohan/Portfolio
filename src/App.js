@@ -19,6 +19,7 @@ function FuturisticLoader() {
 function App() {
   const [loading, setLoading] = useState(true);
   const [navOpen, setNavOpen] = useState(false);
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
@@ -104,7 +105,7 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.034 0 3.595 1.997 3.595 4.59v5.606z"/></svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 rounded bg-gray-900 text-green-300 text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">LinkedIn</span>
             </a>
-            <a href="https://drive.google.com/file/d/1VpVvoCCc6gcyVrS8VQ59xmehMePp_6EK/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume" className="relative group hover:text-green-400 transition-transform hover:scale-125">
+            <a href="https://drive.google.com/file/d/1-3NTn3JAvwGg8HjPa-r_CJGJiA58lE-3/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume" className="relative group hover:text-green-400 transition-transform hover:scale-125">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm1 1.5V8h4.5zm-7 7.5h8v2h-8zm0 4h8v2h-8z"/></svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 rounded bg-gray-900 text-green-300 text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">Resume</span>
             </a>
@@ -166,6 +167,14 @@ function App() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-12 h-12 mb-2 transition-transform hover:scale-125" />
               <span>MySQL</span>
             </div>
+            <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1100">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Bootstrap" className="w-12 h-12 mb-2 transition-transform hover:scale-125" />
+              <span>NodeJS</span>
+            </div>
+            <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1100">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="Bootstrap" className="w-12 h-12 mb-2 transition-transform hover:scale-125" />
+              <span>MongoDB</span>
+            </div>
             <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="800">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-12 h-12 mb-2 transition-transform hover:scale-125" />
               <span>PHP</span>
@@ -193,6 +202,24 @@ function App() {
       <section id="projects" className="max-w-6xl mx-auto py-24 px-4" data-aos="fade-up">
         <h3 className="text-3xl font-bold mb-10 text-green-400 text-center" data-aos="fade-down">Projects</h3>
         <div className="grid md:grid-cols-2 gap-10">
+          {/* Project 0:College Event Management Calender */}
+          <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="0">
+            <div className="p-6">
+              <h4 className="text-2xl font-bold mb-2 text-green-300">University Event Calendar</h4>
+              <div className="flex gap-2 mb-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS" className="w-7 h-7" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" className="w-7 h-7 invert" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="w-7 h-7" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-7 h-7" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-7 h-7" />
+              </div>
+              <p className="text-gray-300 mb-4">Developed a React, Node.js, MongoDB platform used by 200+ university members, featuring clash detection, review workflows, and PDF/Excel exports, reducing event conflicts by 40% and reporting time by 50%..</p>
+              <div className="flex gap-4">
+                <a href="https://github.com/Stack-Nova/Event-Calendar.git" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://event-calendar-alpha-red.vercel.app/" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </div>
           {/* Project 1: Snakebeans: Python to Java Transpiler */}
           <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="0">
             <div className="p-6">
@@ -240,41 +267,53 @@ function App() {
               <a href="https://github.com/CypherRohan/Facial_Expression_Recognition_yolov8" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-          {/* Project 4 */}
-          <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="450">
-            <div className="p-6">
-              <h4 className="text-2xl font-bold mb-2 text-green-300">College-Enquiry-Chatbot</h4>
-              <div className="flex gap-2 mb-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-7 h-7" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn" className="w-7 h-7" />
+          {showAllProjects && (
+            <>
+              {/* Project 4 */}
+              <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="450">
+                <div className="p-6">
+                  <h4 className="text-2xl font-bold mb-2 text-green-300">College-Enquiry-Chatbot</h4>
+                  <div className="flex gap-2 mb-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-7 h-7" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn" className="w-7 h-7" />
+                  </div>
+                  <p className="text-gray-300 mb-4">Designed and integrated a GUI-based college-enquiry chatbot with Tkinter, using 3 ML models for intent classification (Logistic Regression, Naive Bayes, SVM), achieving 81% accuracy with SVM. Transformed 200+ patterns from a JSON-based intent dataset.</p>
+                  <a href="https://github.com/CypherRohan/College-Enquiry-Chatbot" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
               </div>
-              <p className="text-gray-300 mb-4">Designed and integrated a GUI-based college-enquiry chatbot with Tkinter, using 3 ML models for intent classification (Logistic Regression, Naive Bayes, SVM), achieving 81% accuracy with SVM. Transformed 200+ patterns from a JSON-based intent dataset.</p>
-              <a href="https://github.com/CypherRohan/College-Enquiry-Chatbot" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-          {/* Project 5 */}
-          <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="600">
-            <div className="p-6">
-              <h4 className="text-2xl font-bold mb-2 text-green-300">MYPaint</h4>
-              <div className="flex gap-2 mb-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-7 h-7" />
+              {/* Project 5 */}
+              <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="600">
+                <div className="p-6">
+                  <h4 className="text-2xl font-bold mb-2 text-green-300">MYPaint</h4>
+                  <div className="flex gap-2 mb-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-7 h-7" />
+                  </div>
+                  <p className="text-gray-300 mb-4">Developed an interactive Java-based paint application with 6 control buttons and a dropdown for 21 brush sizes. Implemented Brush/Eraser tools, clear canvas, and smooth rendering with BufferedImage.</p>
+                  <a href="https://github.com/CypherRohan/My-Paint-JAVA" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
               </div>
-              <p className="text-gray-300 mb-4">Developed an interactive Java-based paint application with 6 control buttons and a dropdown for 21 brush sizes. Implemented Brush/Eraser tools, clear canvas, and smooth rendering with BufferedImage.</p>
-              <a href="https://github.com/CypherRohan/My-Paint-JAVA" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-          {/* Project 6 */}
-          <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="750">
-            <div className="p-6">
-              <h4 className="text-2xl font-bold mb-2 text-green-300">Password Manager</h4>
-              <div className="flex gap-2 mb-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-7 h-7" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" className="w-7 h-7" />
+              {/* Project 6 */}
+              <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-200 backdrop-blur-md border border-white/20 hover:shadow-[0_0_48px_12px_rgba(34,211,238,0.85)]" style={{background: 'rgba(17, 24, 39, 0.6)', boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)', border: '1px solid rgba(255,255,255,0.12)'}} data-aos="flip-left" data-aos-delay="750">
+                <div className="p-6">
+                  <h4 className="text-2xl font-bold mb-2 text-green-300">Password Manager</h4>
+                  <div className="flex gap-2 mb-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-7 h-7" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" className="w-7 h-7" />
+                  </div>
+                  <p className="text-gray-300 mb-4">Built a password manager using 3-character ASCII shift encryption, with credentials stored in SQLite. Features intuitive GUI, fast password search, and secure password generation.</p>
+                  <a href="https://github.com/CypherRohan/Password-Manager" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
               </div>
-              <p className="text-gray-300 mb-4">Built a password manager using 3-character ASCII shift encryption, with credentials stored in SQLite. Features intuitive GUI, fast password search, and secure password generation.</p>
-              <a href="https://github.com/CypherRohan/Password-Manager" className="text-green-400 hover:underline transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
+            </>
+          )}
+        </div>
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setShowAllProjects(!showAllProjects)}
+            className="px-8 py-3 bg-green-400 text-gray-950 font-bold rounded-full shadow-lg hover:bg-green-300 transition hover:scale-105"
+          >
+            {showAllProjects ? 'See Less' : 'See More'}
+          </button>
         </div>
       </section>
 
