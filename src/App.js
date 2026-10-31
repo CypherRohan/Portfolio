@@ -122,7 +122,7 @@ function App() {
           <div className="mt-4">
             <h4 className="text-xl font-semibold text-green-300 mb-2" data-aos="fade-right" data-aos-delay="600">Education</h4>
             <ul className="text-gray-300 list-disc list-inside">
-              <li data-aos="fade-up" data-aos-delay="700"><strong>B.Tech (CSE):</strong> Graphic Era Hill University, Dehradun (2022-Present) — GPA: 7.84/10.0</li>
+              <li data-aos="fade-up" data-aos-delay="700"><strong>B.Tech (CSE):</strong> Graphic Era Hill University, Dehradun (2022-2026) — GPA: 8.01/10.0</li>
               <li data-aos="fade-up" data-aos-delay="800"><strong>XII:</strong> A.N. International School, Bijnor (2021) — 94.40%</li>
               <li data-aos="fade-up" data-aos-delay="900"><strong>X:</strong> A.N. International School, Bijnor (2019) — 89.80%</li>
             </ul>
