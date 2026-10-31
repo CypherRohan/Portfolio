@@ -90,7 +90,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-br from-green-900/30 to-transparent animate-pulse" />
         <div className="relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4">Hi, I'm Rohan Saini</h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6" data-aos="fade-up" data-aos-delay="400">B.Tech CSE Student & Web Developer</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6" data-aos="fade-up" data-aos-delay="400">B.Tech CSE Graduate & Web Developer</h2>
           <p className="max-w-xl mx-auto text-lg text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="600">I build beautiful, modern, and responsive web experiences. B.Tech graduate in Computer Science from Graphic Era Hill University, Dehradun. Passionate about AI, web development, and building impactful projects.</p>
           <div className="flex justify-center gap-4 mb-4" data-aos="zoom-in" data-aos-delay="800">
             <a href="mailto:rrrohansaini@gmail.com" aria-label="Email" className="relative group hover:text-green-400 transition-transform hover:scale-125">
@@ -105,7 +105,7 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.034 0 3.595 1.997 3.595 4.59v5.606z"/></svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 rounded bg-gray-900 text-green-300 text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">LinkedIn</span>
             </a>
-            <a href="https://drive.google.com/file/d/1-3NTn3JAvwGg8HjPa-r_CJGJiA58lE-3/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume" className="relative group hover:text-green-400 transition-transform hover:scale-125">
+            <a href="https://drive.google.com/file/d/1jc_YMK56p3suXIYNX0tU11RI1p_W_6Mc/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Resume" className="relative group hover:text-green-400 transition-transform hover:scale-125">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm1 1.5V8h4.5zm-7 7.5h8v2h-8zm0 4h8v2h-8z"/></svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 rounded bg-gray-900 text-green-300 text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">Resume</span>
             </a>
@@ -118,7 +118,7 @@ function App() {
       <section id="about" className="max-w-4xl mx-auto py-24 px-4 flex flex-col md:flex-row items-center gap-10" data-aos="fade-right">
         <div>
           <h3 className="text-3xl font-bold mb-4 text-green-400" data-aos="fade-down" data-aos-delay="400">About Me</h3>
-          <p className="text-lg text-gray-300 mb-2">I'm a B.Tech (CSE) student at Graphic Era Hill University, Dehradun, with a strong interest in AI, web development, and building real-world solutions. I enjoy learning new technologies and applying them to solve problems.</p>
+          <p className="text-lg text-gray-300 mb-2">I'm a B.Tech (CSE) Graduate of Graphic Era Hill University, Dehradun, with a strong interest in AI, web development, and building real-world solutions. I enjoy learning new technologies and applying them to solve problems.</p>
           <div className="mt-4">
             <h4 className="text-xl font-semibold text-green-300 mb-2" data-aos="fade-right" data-aos-delay="600">Education</h4>
             <ul className="text-gray-300 list-disc list-inside">
