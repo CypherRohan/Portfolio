@@ -336,7 +336,7 @@ function App() {
           <a href="https://www.linkedin.com/in/rohan-saini-838642290" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-green-400 transition-transform hover:scale-125">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.034 0 3.595 1.997 3.595 4.59v5.606z"/></svg>
           </a>
-          <a href="mailto:rohanbijnor1@gmail.com" aria-label="Email" className="hover:text-green-400 transition-transform hover:scale-125">
+          <a href="mailto:rrrohansaini@gmail.com" aria-label="Email" className="hover:text-green-400 transition-transform hover:scale-125">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.065 2.4 6.6A2 2 0 0 1 4 6h16a2 2 0 0 1 1.6.6L12 13.065zm9.6-6.6A4 4 0 0 0 20 4H4a4 4 0 0 0-3.6 2.465l10.8 7.2a1 1 0 0 0 1.2 0l10.8-7.2A4 4 0 0 0 21.6 6.465zM2 8.236V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.236l-9.2 6.133a3 3 0 0 1-3.6 0L2 8.236z"/></svg>
           </a>
           <a href="tel:+919548573069" aria-label="Phone" className="hover:text-green-400 transition-transform hover:scale-125">
