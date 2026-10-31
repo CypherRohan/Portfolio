@@ -91,9 +91,9 @@ function App() {
         <div className="relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4">Hi, I'm Rohan Saini</h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-6" data-aos="fade-up" data-aos-delay="400">B.Tech CSE Student & Web Developer</h2>
-          <p className="max-w-xl mx-auto text-lg text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="600">I build beautiful, modern, and responsive web experiences. Currently pursuing B.Tech in Computer Science at Graphic Era Hill University, Dehradun. Passionate about AI, web development, and building impactful projects.</p>
+          <p className="max-w-xl mx-auto text-lg text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="600">I build beautiful, modern, and responsive web experiences. B.Tech graduate in Computer Science from Graphic Era Hill University, Dehradun. Passionate about AI, web development, and building impactful projects.</p>
           <div className="flex justify-center gap-4 mb-4" data-aos="zoom-in" data-aos-delay="800">
-            <a href="mailto:rohanbijnor1@gmail.com" aria-label="Email" className="relative group hover:text-green-400 transition-transform hover:scale-125">
+            <a href="mailto:rrrohansaini@gmail.com" aria-label="Email" className="relative group hover:text-green-400 transition-transform hover:scale-125">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.065 2.4 6.6A2 2 0 0 1 4 6h16a2 2 0 0 1 1.6.6L12 13.065zm9.6-6.6A4 4 0 0 0 20 4H4a4 4 0 0 0-3.6 2.465l10.8 7.2a1 1 0 0 0 1.2 0l10.8-7.2A4 4 0 0 0 21.6 6.465zM2 8.236V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.236l-9.2 6.133a3 3 0 0 1-3.6 0L2 8.236z"/></svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-2 py-1 rounded bg-gray-900 text-green-300 text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">Email</span>
             </a>
